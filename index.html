@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أحمد حسن | مطور واجهات أمامية</title>
+    <meta name="description" content="مطور واجهات أمامية متخصص في React و Next.js و TypeScript." />
+    <meta name="theme-color" content="#6366f1" />
+
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <!-- Google Fonts (Arabic) -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=Alexandria:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+</head>
+
+<body>
+
+    <!-- Skip to Content -->
+    <a href="#main-content" class="visually-hidden-focusable btn btn-primary position-absolute top-0 end-0 m-2 z-3">تخطي
+        إلى المحتوى الرئيسي</a>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav id="header" class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container-fluid  px-3 px-md-4 px-lg-5">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#hero-section">
+                <span class="logo-badge"><i class="bi bi-code-slash"></i></span>
+                <span class="logo-text">أحمد حسن</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4 gap-2">
+                    <li class="nav-item "><a class="nav-link active" href="#hero-section">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">عني</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">الأعمال</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">الخبرة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">التوصيات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل</a></li>
+                    <li class="nav-item">
+                        <button id="theme-toggle-button" class="theme-toggle" aria-label="تبديل الوضع الداكن"
+                            type="button">
+                            <span class="theme-toggle-circle">
+                                <i class="bi bi-sun-fill sun-icon"></i>
+                                <i class="bi bi-moon-stars-fill moon-icon"></i>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- ============ HERO ============ -->
+        <!-- <section id="hero-section" class="hero-section d-flex align-items-center">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-end">
+                        <span class="badge-status mb-4 d-inline-flex align-items-center gap-2">
+                            <span class="pulse-dot"></span>
+                            متاح للشغل الحر
+                        </span>
+
+                        <p class="fs-4 text-secondary-emphasis mb-2">مرحباً، أنا 👋</p>
+                        <h1 class="display-3 fw-black gradient-text mb-4">أحمد حسن</h1>
+
+                        <div class="role-badge d-inline-flex align-items-center gap-2 mb-4">
+                            <span class="role-badge-icon"><i class="bi bi-code-slash"></i></span>
+                            <span class="fw-bold">Frontend Developer</span>
+                        </div>
+
+                        <p class="fs-5 text-body-secondary mb-4 col-lg-10 mx-lg-0 mx-auto">
+                            بحول أفكارك لـ <span class="text-primary-em fw-semibold">تجارب رقمية مميزة</span>.
+                            متخصص في بناء مواقع وتطبيقات ويب حديثة بأحدث التقنيات.
+                        </p>
+
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-end gap-3 mb-4">
+                            <a href="#portfolio" class="btn btn-gradient btn-lg d-inline-flex align-items-center gap-2">
+                                استكشف أعمالي <i class="bi bi-arrow-left"></i>
+                            </a>
+                            <a href="#contact"
+                                class="btn btn-outline-soft btn-lg d-inline-flex align-items-center gap-2">
+                                تواصل معي <i class="bi bi-send"></i>
+                            </a>
+                        </div>
+
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-end gap-2">
+                           
+                            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                                <span class="tech-pill"><i class="devicon-react-original colored"></i> React</span>
+                                <span class="tech-pill"><i class="devicon-typescript-plain colored"></i>
+                                    TypeScript</span>
+                                <span class="tech-pill"><i class="devicon-tailwindcss-original colored"></i>
+                                    Tailwind</span>
+                                <span class="tech-pill"><i class="devicon-nextjs-original"></i> Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <div class="hero-image-wrap mx-auto">
+                            <div class="hero-ring-outer"></div>
+                            <div class="hero-ring-inner"></div>
+                            <img src="assets/imgs/hero-section-img-Dsy3Av-w.webp" alt="أحمد حسن" class="hero-image" />
+                        
+                            <span class="floating-badge fb-1"><i class="devicon-react-original colored"></i></span>
+                            <span class="floating-badge fb-2"><i class="devicon-vuejs-plain colored"></i></span>
+                            <span class="floating-badge fb-3"><i class="bi bi-code-slash"></i></span>
+                            <span class="floating-badge fb-4"><i class="devicon-figma-plain colored"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#about" class="scroll-down">
+                    <span class="scroll-text">اكتشف المزيد</span>
+                    <span class="mouse"><span class="mouse-wheel"></span></span>
+                </a>
+            </div>
+        </section> -->
+        <!-- ============ HERO ============ -->
+        <section id="hero-section" class="hero-section d-flex align-items-center">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+                        <span class="badge-status mb-4 d-inline-flex align-items-center gap-2">
+                            <span class="pulse-dot"></span>
+                            متاح للشغل الحر
+                        </span>
+
+                        <p class="fs-4 text-secondary-emphasis mb-2">مرحباً، أنا 👋</p>
+                        <h1 class="display-3 fw-black gradient-text mb-4">أحمد حسن</h1>
+
+                        <div class="role-badge d-inline-flex align-items-center gap-2 mb-4">
+                            <span class="role-badge-icon"><i class="bi bi-code-slash"></i></span>
+                            <span class="fw-bold">Frontend Developer</span>
+                        </div>
+
+                        <p class="fs-5 text-body-secondary mb-4 col-lg-10">
+                            بحول أفكارك لـ <span class="text-primary-em fw-semibold">تجارب رقمية مميزة</span>.
+                            متخصص في بناء مواقع وتطبيقات ويب حديثة بأحدث التقنيات.
+                        </p>
+
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mb-4">
+                            <a href="#portfolio" class="btn btn-gradient btn-lg d-inline-flex align-items-center gap-2">
+                                استكشف أعمالي <i class="bi bi-arrow-left"></i>
+                            </a>
+                            <a href="#contact"
+                                class="btn btn-outline-soft btn-lg d-inline-flex align-items-center gap-2">
+                                تواصل معي <i class="bi bi-send"></i>
+                            </a>
+                        </div>
+
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                            <span class="tech-pill tech-react"><i class="devicon-react-original colored"></i>
+                                React</span>
+                            <span class="tech-pill tech-ts"><i class="devicon-typescript-plain colored"></i>
+                                TypeScript</span>
+                            <span class="tech-pill tech-tailwind"><i class="devicon-tailwindcss-original colored"></i>
+                                Tailwind</span>
+                            <span class="tech-pill tech-next"><i class="devicon-nextjs-original"></i> Next.js</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 order-1 order-lg-2 text-center">
+                        <div class="hero-image-wrap mx-auto">
+                            <div class="hero-ring-outer"></div>
+                            <div class="hero-ring-inner"></div>
+                            <img src="assets/imgs/hero-section-img-Dsy3Av-w.webp" alt="أحمد حسن" class="hero-image" />
+                            <span class="floating-badge fb-1"><i class="devicon-react-original colored"></i></span>
+                            <span class="floating-badge fb-2"><i class="devicon-vuejs-plain colored"></i></span>
+                            <span class="floating-badge fb-3"><i class="bi bi-code-slash"></i></span>
+                            <span class="floating-badge fb-4"><i class="devicon-figma-plain colored"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- outside .container so it's positioned from the bottom of the section -->
+            <a href="#about" class="scroll-down">
+                <span class="scroll-text">اكتشف المزيد</span>
+                <span class="mouse"><span class="mouse-wheel"></span></span>
+            </a>
+        </section>
+        <!-- ============ ABOUT ============ -->
+        <section id="about" class="section-py">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-eyebrow">من أنا</span>
+                    <h2 class="display-5 fw-black">عن <span class="gradient-text">أحمد حسن</span></h2>
+                    <div class="title-bar mx-auto"></div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <h3 class="fw-black mb-3">بحب أحول الأفكار <span class="text-primary-em">لواقع رقمي</span></h3>
+                        <p class="text-body-secondary fs-5">
+                            مطور واجهات أمامية بخبرة +8 سنوات في بناء تطبيقات ويب حديثة وتصميم تجارب مستخدم استثنائية.
+                        </p>
+                        <p class="text-body-secondary fs-5">
+                            بشتغل بأحدث التقنيات زي React و Next.js و TypeScript عشان أقدم حلول عالية الجودة وتعدي
+                            التوقعات.
+                        </p>
+
+                        <div class="d-flex flex-wrap gap-3 my-4">
+                            <span class="stat-pill"><i class="bi bi-mortarboard text-primary-em"></i> حاسبات
+                                ومعلومات</span>
+                            <span class="stat-pill"><i class="bi bi-briefcase text-secondary-em"></i> +50 مشروع</span>
+                            <span class="stat-pill"><i class="bi bi-people text-accent-em"></i> +35 عميل سعيد</span>
+                        </div>
+
+                        <div class="soft-card p-4">
+                            <h4 class="fw-bold mb-3 d-flex align-items-center gap-2">ما أقدمه <i
+                                    class="bi bi-rocket-takeoff text-primary-em"></i></h4>
+                            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                                <li><span class="dot dot-primary"></span> تطوير تطبيقات ويب متكاملة بـ React &amp;
+                                    Next.js</li>
+                                <li><span class="dot dot-secondary"></span> تصميم واجهات مستخدم حديثة وجذابة</li>
+                                <li><span class="dot dot-accent"></span> تحسين الأداء وسرعة التحميل</li>
+                                <li><span class="dot dot-success"></span> تطوير مواقع متوافقة مع جميع الأجهزة</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="terminal-card mb-4">
+                            <div class="terminal-header">
+                                <span class="dot-red"></span><span class="dot-yellow"></span><span
+                                    class="dot-green"></span>
+                                <span class="ms-3 text-body-secondary small">ahmed.js</span>
+                            </div>
+
+                            <pre class="terminal-body mb-0" dir="ltr"><span class="c-muted">// من أنا باختصار</span>
+<span class="c-purple">const</span> <span class="c-blue">ahmed</span> = {
+  <span class="c-green">name</span>: <span class="c-yellow">"أحمد حسن"</span>,
+  <span class="c-green">title</span>: <span class="c-yellow">"Frontend Developer"</span>,
+  <span class="c-green">experience</span>: <span class="c-orange">8</span> + <span class="c-yellow">" years"</span>,
+  <span class="c-green">location</span>: <span class="c-yellow">"Cairo, Egypt 🇪🇬"</span>,
+  <span class="c-green">skills</span>: [
+    <span class="c-yellow">"React"</span>,
+    <span class="c-yellow">"Next.js"</span>,
+    <span class="c-yellow">"TypeScript"</span>,
+    <span class="c-yellow">"Tailwind"</span>
+  ],
+  <span class="c-green">passion</span>: <span class="c-yellow">"Creating pixel-perfect UIs"</span>,
+  <span class="c-green">available</span>: <span class="c-blue">true</span>,
+  <span class="c-green">hireable</span>: <span class="c-blue">true</span>
+};
+
+<span class="c-purple">export default</span> <span class="c-blue">ahmed</span>;</pre>
+                        </div>
+
+                        <div class="row g-3 mb-4 text-center">
+                            <div class="col-4">
+                                <div class="stat-box">
+                                    <div class="stat-number text-primary-em">50+</div>
+                                    <div class="small text-body-secondary">مشروع</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box">
+                                    <div class="stat-number text-secondary-em">8+</div>
+                                    <div class="small text-body-secondary">سنوات</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box">
+                                    <div class="stat-number text-accent-em">35+</div>
+                                    <div class="small text-body-secondary">عميل</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" icons d-flex gap-3 justify-content-center justify-content-lg-end">
+                            <a href="#" class="social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-btn" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-btn" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills-section" class="section-py section-alt">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-eyebrow">ما أتقنه</span>
+                    <h2 class="display-5 fw-black">المهارات و <span class="gradient-text">التقنيات</span></h2>
+                    <div class="title-bar mx-auto"></div>
+                </div>
+
+                <div class="row g-4" id="skillsGrid">
+                    <!-- skill cards injected by JS -->
+                </div>
+
+                <!-- <div class="row g-3 mt-4 text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="tool-box"><i class="bi bi-filetype-html text-orange"></i>
+                            <p class="mb-0 fw-medium">HTML5</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="tool-box"><i class="bi bi-filetype-css text-info"></i>
+                            <p class="mb-0 fw-medium">CSS3</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="tool-box"><i class="bi bi-filetype-js text-warning"></i>
+                            <p class="mb-0 fw-medium">JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="tool-box"><i class="bi bi-git text-danger"></i>
+                            <p class="mb-0 fw-medium">Git</p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row g-3 mt-4 text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="tool-box"><i class="devicon-html5-plain colored"></i>
+                            <p class="mb-0 fw-medium">HTML5</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="tool-box"><i class="devicon-css3-plain colored"></i>
+                            <p class="mb-0 fw-medium">CSS3</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="tool-box"><i class="devicon-javascript-plain colored"></i>
+                            <p class="mb-0 fw-medium">JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="tool-box"><i class="devicon-git-plain colored"></i>
+                            <p class="mb-0 fw-medium">Git</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PORTFOLIO ============ -->
+        <section id="portfolio" class="section-py">
+            <div class="container-fluid">
+                <div class="text-center mb-5">
+                    <span class="section-eyebrow">أعمالي</span>
+                    <h2 class="display-5 fw-black">معرض <span class="gradient-text">المشاريع</span></h2>
+                    <div class="title-bar mx-auto"></div>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center gap-2 mb-5" id="portfolioFilters">
+                    <button class="filter-btn active" data-filter="all" type="button">الكل</button>
+                    <button class="filter-btn" data-filter="web" type="button">مواقع الويب</button>
+                    <button class="filter-btn" data-filter="app" type="button">التطبيقات</button>
+                    <button class="filter-btn" data-filter="design" type="button">التصميم</button>
+                    <button class="filter-btn" data-filter="ecommerce" type="button">التجارة الإلكترونية</button>
+                </div>
+
+                <div class="row g-4" id="portfolioGrid">
+                    <!-- portfolio cards injected by JS -->
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-gradient btn-lg"><i class="bi bi-rocket-takeoff me-2"></i>لنبدأ
+                        مشروعك القادم</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section id="experience" class="section-py section-alt">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-eyebrow">مسيرتي المهنية</span>
+                    <h2 class="display-5 fw-black">الخبرة <span class="gradient-text">العملية</span></h2>
+                    <div class="title-bar mx-auto"></div>
+                </div>
+
+                <div class="timeline" id="timelineList">
+                    <!-- timeline items injected by JS -->
+                </div>
+
+                <div class="row g-4 mt-5 text-center">
+                    <div class="col-md-4">
+                        <div class="soft-card p-4 h-100">
+                            <div class="icon-circle mx-auto mb-3"><i class="bi bi-award"></i></div>
+                            <h4 class="fw-bold">شهادات معتمدة</h4>
+                            <p class="text-body-secondary mb-0">AWS Certified Developer<br />Google UX Design
+                                Professional</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="soft-card p-4 h-100">
+                            <div class="icon-circle mx-auto mb-3"><i class="bi bi-people"></i></div>
+                            <h4 class="fw-bold">فرق العمل</h4>
+                            <p class="text-body-secondary mb-0">خبرة في العمل مع فرق متعددة<br />التخصصات والثقافات</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="soft-card p-4 h-100">
+                            <div class="icon-circle mx-auto mb-3"><i class="bi bi-lightbulb"></i></div>
+                            <h4 class="fw-bold">الابتكار</h4>
+                            <p class="text-body-secondary mb-0">دائماً أبحث عن طرق جديدة<br />لحل المشاكل التقنية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TESTIMONIALS ============ -->
+        <section id="testimonials" class="section-py">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-eyebrow">آراء العملاء</span>
+                    <h2 class="display-5 fw-black">ماذا يقول <span class="gradient-text">العملاء</span></h2>
+                    <div class="title-bar mx-auto"></div>
+                </div>
+
+                <!-- <div id="testimonialCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="testimonialInner">
+                       
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators" id="testimonialIndicators"></div>
+                   
+                </div> -->
+                <div class="t-wrapper mb-5" dir="rtl">
+                    <button class="t-btn t-btn-left" type="button" onclick="nextTestimonial()">‹</button>
+
+                    <div class="t-viewport">
+                        <div class="t-track" id="testimonialInner"></div>
+                    </div>
+
+                    <button class="t-btn t-btn-right" type="button" onclick="prevTestimonial()">›</button>
+                </div>
+
+                <div class="t-dots" id="testimonialDots"></div>
+                <div class="cta-banner p-1">
+                    <div class="cta-banner-inner p-5 text-center">
+                        <h3 class="fw-bold mb-3">جاهز تبدأ مشروعك؟</h3>
+                        <p class="text-body-secondary fs-5 mb-4 col-lg-8 mx-auto">يلا نشتغل سوا عشان نحول أفكارك لواقع
+                            مبهر</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="#contact" class="btn btn-gradient btn-lg">تواصل معي الآن</a>
+                            <a href="#portfolio" class="btn btn-outline-soft btn-lg">شاهد المزيد من الأعمال</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ STATS ============ -->
+        <section id="statistics-section" class="section-py section-alt">
+            <div class="container">
+                <div class="row g-4 text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-icon mx-auto mb-3"><i class="bi bi-diagram-3"></i></div>
+                        <div class="display-6 fw-black gradient-text">50+</div>
+                        <p class="text-body-secondary">مشروع مكتمل</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-icon mx-auto mb-3"><i class="bi bi-people-fill"></i></div>
+                        <div class="display-6 fw-black gradient-text">35+</div>
+                        <p class="text-body-secondary">عميل سعيد</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-icon mx-auto mb-3"><i class="bi bi-clock-history"></i></div>
+                        <div class="display-6 fw-black gradient-text">8+</div>
+                        <p class="text-body-secondary">سنوات خبرة</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-icon mx-auto mb-3"><i class="bi bi-trophy"></i></div>
+                        <div class="display-6 fw-black gradient-text">12+</div>
+                        <p class="text-body-secondary">جائزة وتقدير</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section-py">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-eyebrow">تواصل معي</span>
+                    <h2 class="display-5 fw-black">يلا نبدأ <span class="gradient-text">مشروعك</span></h2>
+                    <div class="title-bar mx-auto"></div>
+                    <p class="fs-5 text-body-secondary mt-3">عندك فكرة مشروع؟ تعالى نتكلم ونحولها لواقع</p>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <a href="mailto:ahmed@example.com" class="contact-card mb-3">
+                            <span class="contact-icon"><i class="bi bi-envelope"></i></span>
+                            <div>
+                                <div class="small text-body-secondary">البريد الإلكتروني</div>
+                                <div class="fw-bold fs-5" dir="ltr">ahmed@example.com</div>
+                                <div class="small text-body-secondary">جاهز للرد خلال 24 ساعة</div>
+                            </div>
+                        </a>
+                        <a href="tel:+201012345678" class="contact-card mb-3">
+                            <span class="contact-icon"><i class="bi bi-telephone"></i></span>
+                            <div>
+                                <div class="small text-body-secondary">رقم الهاتف</div>
+                                <div class="fw-bold fs-5" dir="ltr">+20 10 1234 5678</div>
+                                <div class="small text-body-secondary">متاح من 9 صباحاً - 5 مساءً</div>
+                            </div>
+                        </a>
+                        <div class="contact-card mb-4">
+                            <span class="contact-icon"><i class="bi bi-geo-alt"></i></span>
+                            <div>
+                                <div class="small text-body-secondary">الموقع</div>
+                                <div class="fw-bold fs-5">القاهرة، مصر</div>
+                                <div class="small text-body-secondary">متاح للعمل عن بعد</div>
+                            </div>
+                        </div>
+
+                        <div class="cta-banner p-1">
+                            <div class="cta-banner-inner p-4 text-center">
+                                <h4 class="fw-bold mb-3">تابعني على</h4>
+                                <div class="d-flex justify-content-center gap-3 anchors">
+                                    <a href="#" class="social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                    <a href="#" class="social-btn" aria-label="LinkedIn"><i
+                                            class="bi bi-linkedin"></i></a>
+                                    <a href="#" class="social-btn" aria-label="Twitter"><i
+                                            class="bi bi-twitter-x"></i></a>
+                                    <a href="#" class="social-btn" aria-label="Dribbble"><i
+                                            class="bi bi-dribbble"></i></a>
+                                    <a href="#" class="social-btn" aria-label="Behance"><i
+                                            class="bi bi-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form class="soft-card p-4" id="contactForm">
+                            <div class="mb-3">
+                                <label for="full-name" class="form-label">الاسم الكامل</label>
+                                <input type="text" id="full-name" name="full-name" class="form-control form-control-lg"
+                                    placeholder="أدخل اسمك الكامل" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" class="form-control form-control-lg"
+                                    placeholder="example@email.com" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone" class="form-control form-control-lg"
+                                    placeholder="+20 10 XXXX XXXX" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="project-type" class="form-label">نوع المشروع</label>
+                                <select id="project-type" name="project-type" class="form-select form-select-lg">
+                                    <option value="" selected>اختر نوع المشروع</option>
+                                    <option value="موقع ويب">موقع ويب</option>
+                                    <option value="تطبيق ويب">تطبيق ويب</option>
+                                    <option value="تطبيق جوال">تطبيق جوال</option>
+                                    <option value="تصميم UI/UX">تصميم UI/UX</option>
+                                    <option value="استشارة تقنية">استشارة تقنية</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="budget" class="form-label">الميزانية المتوقعة</label>
+                                <select id="budget" name="budget" class="form-select form-select-lg">
+                                    <option value="" selected>اختر الميزانية</option>
+                                    <option value="أقل من 20,000 جنيه">أقل من 20,000 جنيه</option>
+                                    <option value="20,000 - 50,000 جنيه">20,000 - 50,000 جنيه</option>
+                                    <option value="50,000 - 100,000 جنيه">50,000 - 100,000 جنيه</option>
+                                    <option value="أكثر من 100,000 جنيه">أكثر من 100,000 جنيه</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="project-details" class="form-label">تفاصيل المشروع</label>
+                                <textarea id="project-details" name="project-details" rows="5"
+                                    class="form-control form-control-lg" placeholder="احكيلي تفاصيل مشروعك..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gradient btn-lg w-100">
+                                <i class="bi bi-send me-2"></i>ابعت الرسالة
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FOOTER ============ -->
+        <footer id="footer" class="pt-5 pb-4">
+            <div class="container">
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center gap-2 mb-3">
+                            <span class="logo-badge"><i class="bi bi-code-slash"></i></span>
+                            <span class="logo-text">أحمد حسن</span>
+                        </div>
+                        <p class="text-body-secondary fs-5">
+                            أؤمن بأن البرمجة فن. هدفي مش بس كتابة كود، بل خلق تجربة مستخدم سلسة بتسيب أثر.
+                        </p>
+                        <a href="#" class="resume-btn mb-3">
+                            <span class="resume-icon"><i class="bi bi-file-earmark-arrow-down"></i></span>
+                            <span>
+                                <span class="d-block small text-body-secondary">تعرف على خبراتي</span>
+                                <span class="d-block fw-bold">حمل السيرة الذاتية (CV)</span>
+                            </span>
+                        </a>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="pulse-dot"></span>
+                            <p class="small text-body-secondary mb-0">أعمل حالياً على: <span class="fw-bold">مشروع SaaS
+                                    لإدارة الفريق</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <h5 class="fw-bold mb-3">روابط سريعة</h5>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="#hero-section" class="footer-link">الرئيسية</a></li>
+                            <li><a href="#about" class="footer-link">عني</a></li>
+                            <li><a href="#portfolio" class="footer-link">الأعمال</a></li>
+                            <li><a href="#experience" class="footer-link">الخبرة</a></li>
+                            <li><a href="#testimonials" class="footer-link">التوصيات</a></li>
+                            <li><a href="#contact" class="footer-link">تواصل</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <h5 class="fw-bold mb-3">الخدمات</h5>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a href="#" class="footer-link">تطوير الويب</a></li>
+                            <li><a href="#" class="footer-link">تطوير التطبيقات</a></li>
+                            <li><a href="#" class="footer-link">تصميم UI/UX</a></li>
+                            <li><a href="#" class="footer-link">الاستشارات التقنية</a></li>
+                            <li><a href="#" class="footer-link">الصيانة والدعم</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-top pt-4 text-center text-body-secondary rights">
+                    &copy; 2025 أحمد حسن. جميع الحقوق محفوظة.
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-to-top" class="scroll-top-btn" aria-label="العودة للأعلى" type="button">
+        <i class="bi bi-rocket-takeoff"></i>
+    </button>
+
+    <!-- Settings Toggle -->
+    <button id="settings-toggle" class="settings-toggle-btn" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#settingsSidebar" aria-label="تخصيص المظهر">
+        <i class="bi bi-gear"></i>
+    </button>
+
+    <!-- Settings Offcanvas -->
+    <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="settingsSidebar">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold"><i class="bi bi-sliders me-2"></i>تخصيص المظهر</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h6 class="text-uppercase small fw-bold text-body-secondary mb-3">لون الثيم</h6>
+            <div class="d-flex flex-wrap gap-2 mb-4" id="themeColorsGrid"></div>
+
+            <h6 class="text-uppercase small fw-bold text-body-secondary mb-3">وضع العرض</h6>
+            <div class="btn-group w-100 mb-4" role="group">
+                <input type="radio" class="btn-check" name="modeOption" id="modeLight" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="modeLight"><i class="bi bi-sun"></i> فاتح</label>
+                <input type="radio" class="btn-check" name="modeOption" id="modeDark" autocomplete="off" checked>
+                <label class="btn btn-outline-secondary" for="modeDark"><i class="bi bi-moon"></i> داكن</label>
+            </div>
+
+            <button id="reset-settings" class="btn btn-outline-danger w-100" type="button">
+                <i class="bi bi-arrow-counterclockwise me-2"></i>إعادة الضبط
+            </button>
+        </div>
+    </div> -->
+    <!-- Settings Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="settingsSidebar">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold"><i class="bi bi-sliders me-2"></i>تخصيص المظهر</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h6 class="small fw-bold text-body-secondary mb-3"><i class="bi bi-palette me-1"></i> لون الثيم</h6>
+            <div class="d-flex flex-wrap gap-2 mb-4" id="themeColorsGrid"></div>
+
+            <h6 class="small fw-bold text-body-secondary mb-3">وضع العرض</h6>
+            <div class="btn-group w-100 mb-4" role="group">
+                <input type="radio" class="btn-check" name="modeOption" id="modeLight" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="modeLight"><i class="bi bi-sun"></i> فاتح</label>
+                <input type="radio" class="btn-check" name="modeOption" id="modeDark" autocomplete="off" checked>
+                <label class="btn btn-outline-secondary" for="modeDark"><i class="bi bi-moon"></i> داكن</label>
+            </div>
+
+            <h6 class="small fw-bold text-body-secondary mb-3">نوع الخط</h6>
+            <div class="d-flex flex-column gap-2 mb-4" id="fontsList"></div>
+
+            <button id="reset-settings" class="btn btn-outline-danger w-100" type="button">
+                <i class="bi bi-arrow-counterclockwise me-2"></i>إعادة الضبط
+            </button>
+        </div>
+    </div>
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
